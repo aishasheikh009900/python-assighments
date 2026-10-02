@@ -1,0 +1,221 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOxZJGXBE5EYhRFhifkTRbZ",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/aishasheikh009900/python-assighments/blob/main/assighment\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# NAME:AYESHA SHEIKH\n",
+        "# ROLL NUM:874798"
+      ],
+      "metadata": {
+        "id": "DbNPAOrEnA0S"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#answer 1\n",
+        "num = int(input(\"Enter a number: \"))\n",
+        "\n",
+        "if num % 2 == 0:\n",
+        "    print(\"even\")\n",
+        "else:\n",
+        "    print(\"odd\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jOgTFlsraXub",
+        "outputId": "0324621f-c89b-4fbb-9abd-8f1844cd8ca3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number: 9\n",
+            "odd\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NCNKUc5y_r-q",
+        "outputId": "73f73f85-ed2a-4cef-dd48-f20fcc53eb3f"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "50\n",
+            "10\n",
+            "600\n",
+            "0.6666666666666666\n"
+          ]
+        }
+      ],
+      "source": [
+        "#answer2\n",
+        "num1=20\n",
+        "num2=30\n",
+        "print(num1+num2)\n",
+        "print(num2-num1)\n",
+        "print(num1*num2)\n",
+        "print(num1/num2)\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#answer3\n",
+        "sub_1 = int(input(\"Enter marks of the first subject: \"))\n",
+        "sub_2 = int(input(\"Enter marks of the second subject: \"))\n",
+        "sub_3 = int(input(\"Enter marks of the third subject: \"))\n",
+        "total = sub_1 + sub_2 + sub_3\n",
+        "print(\"Total marks: \", total)\n",
+        "percentage = total / 300 * 100\n",
+        "print(\"Percentage: \", percentage)\n",
+        "if percentage >= 80:\n",
+        "    print(\"Grade: A+\")\n",
+        "elif percentage >= 70:\n",
+        "    print(\"Grade: A\")\n",
+        "elif percentage >= 60:\n",
+        "    print(\"Grade: B\")\n",
+        "elif percentage >= 50:\n",
+        "    print(\"Grade: C\")\n",
+        "elif percentage >= 40:\n",
+        "    print(\"Grade: D\")\n",
+        "else:\n",
+        "    print(\"Grade: Fail\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qA312gcQmFIF",
+        "outputId": "680cb9e9-5666-4098-a57a-8d2c4af6f9fe"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter marks of the first subject: 66\n",
+            "Enter marks of the second subject: 77\n",
+            "Enter marks of the third subject: 54\n",
+            "Total marks:  197\n",
+            "Percentage:  65.66666666666666\n",
+            "Grade: B\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#question: 04\n",
+        "fruits = [\"apple\", \"banana\",\"mango\",\"grapes\",\"watermelon\"]\n",
+        "fruit = input(\"Enter a fruit: \")\n",
+        "if fruit in fruits:\n",
+        "  print(\"fruit exists in list\")\n",
+        "else:\n",
+        "  print(\"fruit does not exist in list\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "inLgTc6inv-S",
+        "outputId": "84b60542-666b-4ce1-a017-e8bb644b9aab"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a fruit: grapes\n",
+            "fruit exists in list\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#question: 05\n",
+        "student = {\n",
+        "    \"name\": \"ayesha sheikh\",\n",
+        "    \"age\": 19,\n",
+        "    \"favorite_subject\": \"biology\"\n",
+        "}\n",
+        "\n",
+        "print(\"Name:\", student[\"name\"])\n",
+        "print(\"Age:\", student[\"age\"])\n",
+        "print(\"Favorite Subject:\", student[\"favorite_subject\"])\n",
+        "\n",
+        "if student[\"age\"] >= 18:\n",
+        "    print(\"The student is 18 or above.\")\n",
+        "else:\n",
+        "    print(\"The student is below 18 or under age.\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2A_UIxX6oA6D",
+        "outputId": "de93fdd8-9b3d-4eb4-82e3-30d504fb15f0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Name: ayesha sheikh\n",
+            "Age: 19\n",
+            "Favorite Subject: biology\n",
+            "The student is 18 or above.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
